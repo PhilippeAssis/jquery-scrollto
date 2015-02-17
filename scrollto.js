@@ -36,5 +36,7 @@ $.scrollTo = $.fn.scrollTo = function(options){
             x = y = this.hash;
 
         $('html,body').stop().scrollToEngine(x, y, options);
+
+        return false;
     })
 }
